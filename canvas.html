@@ -1,0 +1,70 @@
+<!--?xml version="1.0"?-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Trabalho CG</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+
+<h1>Trabalho de CG</h1>
+
+<div id="general">
+	
+	<div id="menu">
+		<p id="debug"></p>
+
+		<h2>Ferramentas</h2>
+		<div class="tools">
+			<div class="button" ref="selection" title="Selecionar"><div><img src="images/tool_selection.png" alt="" /></div></div>
+			<div class="button" ref="pan" title="Pan"><div><img src="images/tool_pan.png" alt="" /></div></div>
+			<div class="button" ref="zoomIn" title="Zoom (+)"><div><img src="images/tool_zoom_in.png" alt="" /></div></div>
+			<div class="button" ref="zoomOut" title="Zoom (-)"><div><img src="images/tool_zoom_out.png" alt="" /></div></div>
+			<div class="button" ref="scale" title="Redimensionar"><div><img src="images/tool_scale.png" alt="" /></div></div>
+			<div class="button" ref="rotation" title="Rotacionar"><div><img src="images/tool_rotation.png" alt="" /></div></div>
+			<div class="button" ref="mirror" title="Espelhar"><div><img src="images/tool_mirror.png" alt="" /></div></div>
+			<div class="button" ref="quickHull" title="Fecho Convexo QuickHull"><div><img src="images/tool_quickhull.png" alt="" /></div></div>
+			<div class="button" ref="jarvis" title="Fecho Convexo Javis"><div><img src="images/tool_jarvis.png" alt="" /></div></div>
+			<div class="clear"></div>
+		</div>
+
+		<h2>Criação</h2>
+		<div class="tools">
+			<div class="button" ref="point" title="Ponto"><div><img src="images/tool_point.png" /></div></div>
+			<div class="button" ref="randomPoints" title="Gerar pontos aleatórios"><div><img src="images/tool_points.png" /></div></div>
+			<div class="button" ref="line" title="Linha"><div><img src="images/tool_line.png" /></div></div>
+			<div class="button" ref="polygon" title="Polígono"><div><img src="images/tool_polygon.png" /></div></div>
+			<div class="button" ref="quadraticCurve" title="Curva Quadrática"><div><img src="images/tool_quadratic_curve.png" /></div></div>
+			<div class="button" ref="bezierCurve" title="Curva de Bezier"><div><img src="images/tool_bezier_curve.png" /></div></div>
+			<div class="button" ref="freeHand" title="Desenho Livre"><div><img src="images/tool_free_hand.png" alt="" /></div></div>
+			<div class="button" ref="text" title="Texto"><div><img src="images/tool_text.png" /></div></div>
+			<div class="clear"></div>
+		</div>
+		<div class="options" id="optionsRandomPoints">
+			<form action="#">
+				<label for="qnt">Qnt.</label>
+				<input type="text" id="qnt" value="100" />
+				<input type="submit" value="GERAR PONTOS" />
+			</form>
+		</div>
+		<div class="options" id="optionsText">
+			<form action="#">
+				<input type="text" value="Texto" />
+				<label for="tam">Tamanho.:</label>
+				<input type="text" value="14" id="tam" />
+				
+			</form>
+		</div>
+	</div>
+	
+	<div id="mousePosition">--</div>
+	
+	<canvas id="canvas"></canvas>
+	
+</div>
+	
+</body>
+</html>
